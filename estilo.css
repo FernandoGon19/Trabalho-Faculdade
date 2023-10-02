@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+}
+
+body {
+    background-color: #DCDDE1;
+}
+
+h1,h2, h3 {
+    font-family: 'Bungee', cursive;
+    color: #273C75; 
+}
+
+/* Estilização do menu de navegação*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.abas {
+    display: flex;
+    padding-right: 100px;
+}
+
+nav img {
+    justify-content: left;
+    height: 40px;
+    width: 40px;
+}
+
+.abas li {
+    list-style: none;
+    padding-left: 15px ;
+}
+
+.abas li a {
+    font-family: 'Bungee', cursive;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.abas li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+
+header {
+    background-color: #273C75;
+    padding: 30px ;
+    position: fixed;
+    width: 100%;
+}
+
+/* Estilização da introdução*/
+
+.principal {
+    padding-top: 100px;
+    background-image: url(./imagens/principal.jpg) ;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+}
+
+.introducao img{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 280px;
+}
+
+/* Sobre Mim */
+
+.sobre {
+    padding-top: 100px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sobre img {
+    height: 400px;
+    width: 500px;
+}
+
+.sobreIMG {
+    float: left;
+    width: 50%;
+}
+
+.sobreMim {
+    float: left;
+    width: 50%;
+}
+
+.sobreMim p {
+    line-height: 25px;
+}
+
+.icones img {
+    width: 40px;
+    height: 40px;
+}
+
+.icones ul {
+    display: flex;
+}
+
+.icones li {
+    list-style: none;
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+/* Seção Cursos */
+
+.cursos {
+    margin-top: 500px;
+    padding-top: 70px;
+    height: 460px;
+    background-color: #273C75;
+}
+
+.cursos h2 {
+    font-weight: normal;
+    text-align: center;
+    color: white;
+}
+
+.cursos-icones img {
+    height: 250px;
+    width: 250px;
+}
+
+.cursos-icones  {
+   display: flex;
+   padding-top: 60px;
+}
+
+.cursos-icones li {
+    list-style: none;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cursos-icones li:hover {
+    border-bottom: 5px solid wheat;
+    
+}
+
+/* Projetos */
+
+.projetos {
+    height: 500px;
+}
+
+.projetos ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.projetos h2 {
+    text-align: center;
+    padding: 40px 0px;
+}
+
+
+.projetos img {
+    height: 200px;
+    border: 7px solid transparent;
+}
+
+.projetos img:hover {
+    height: 200px;
+    border: 7px solid #273C75;
+}
+
+
+/* Contato */
+
+.contato {
+    background-color: #273C75;
+    height: 500px;
+}
+
+.contato h2 {
+    font-weight: normal;
+    color: white;
+}
+
+
+
+.contato input,textarea {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    border: 2px solid #DCDDE1;
+    padding: 7px;
+    color: white;
+}
+
+.contato form {
+    width: 300px;
+}
+
+.contato button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #2ecc71;
+    border: none;
+    border: 2px solid #273C75;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.contato button:hover {
+    background-color: #273C75;
+    border: 2px solid #2ecc71;
+    color: #2ecc71;
+    transition: 1s;
+}
+
+
+
+
+/* Footer do site */
+
+footer {
+    padding: 10px;
+}
+
+/* Responsivo*/
+
+@media screen and (max-width:992px){
+
+    .container {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Sobre */
+    
+    .sobreIMG {
+        float: none;
+    }
+
+    .sobre img {
+        height: 200px;
+        width: 300px;
+    }
+    
+    .sobreMim {
+        float: none;
+    }
+
+    .sobre {
+        text-align: center;
+        padding-left: 25%;
+        height: 200px;
+    }
+
+
+     /* Icones*/
+
+    .cursos-icones img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .icones img {
+    
+        width: 40px;
+        height: 40px;
+    }
+
+    .icones ul {
+        justify-content: center;
+    }
+
+    /* Cursos */
+
+    .cursos-icones  {
+        display: block;
+        padding: 0px 30%;
+        padding-top: 60px;
+     }
+
+    .cursos {
+        height: 860px;
+    }
+}
+
+
+@media screen and (max-width:694px){
+    .sobre {
+        height: 350px;
+    }
+}
